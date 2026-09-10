@@ -4,67 +4,67 @@
   "batch_size": 8,
   "learning_rate": 0.0001,
   "class_balanced_loss": true,
-  "binary_accuracy": 0.8913,
-  "macro_f1": 0.8603,
-  "weighted_f1": 0.8975,
+  "binary_accuracy": 0.9493,
+  "macro_f1": 0.9263,
+  "weighted_f1": 0.9496,
   "published_baseline": 0.0,
-  "baseline_delta": 0.8913,
+  "baseline_delta": 0.9493,
   "history": [
     {
       "epoch": 1,
-      "train_loss": 0.6654,
-      "val_binary_accuracy": 0.442,
-      "val_macro_f1": 0.442,
-      "val_weighted_f1": 0.4443
+      "train_loss": 0.5867,
+      "val_binary_accuracy": 0.9203,
+      "val_macro_f1": 0.8916,
+      "val_weighted_f1": 0.9231
     },
     {
       "epoch": 2,
-      "train_loss": 0.529,
-      "val_binary_accuracy": 0.4928,
-      "val_macro_f1": 0.491,
-      "val_weighted_f1": 0.5077
+      "train_loss": 0.3035,
+      "val_binary_accuracy": 0.913,
+      "val_macro_f1": 0.8487,
+      "val_weighted_f1": 0.9045
     },
     {
       "epoch": 3,
-      "train_loss": 0.5061,
-      "val_binary_accuracy": 0.7029,
-      "val_macro_f1": 0.6799,
-      "val_weighted_f1": 0.7284
+      "train_loss": 0.3519,
+      "val_binary_accuracy": 0.942,
+      "val_macro_f1": 0.9203,
+      "val_weighted_f1": 0.9438
     },
     {
       "epoch": 4,
-      "train_loss": 0.347,
-      "val_binary_accuracy": 0.6957,
-      "val_macro_f1": 0.6734,
-      "val_weighted_f1": 0.7216
+      "train_loss": 0.1832,
+      "val_binary_accuracy": 0.9493,
+      "val_macro_f1": 0.9263,
+      "val_weighted_f1": 0.9496
     },
     {
       "epoch": 5,
-      "train_loss": 0.3296,
-      "val_binary_accuracy": 0.9275,
-      "val_macro_f1": 0.8935,
-      "val_weighted_f1": 0.9275
+      "train_loss": 0.1828,
+      "val_binary_accuracy": 0.8986,
+      "val_macro_f1": 0.866,
+      "val_weighted_f1": 0.9033
     },
     {
       "epoch": 6,
-      "train_loss": 0.2189,
+      "train_loss": 0.2412,
       "val_binary_accuracy": 0.9275,
-      "val_macro_f1": 0.8815,
-      "val_weighted_f1": 0.9233
+      "val_macro_f1": 0.9004,
+      "val_weighted_f1": 0.9298
     },
     {
       "epoch": 7,
-      "train_loss": 0.2514,
-      "val_binary_accuracy": 0.9348,
-      "val_macro_f1": 0.9005,
-      "val_weighted_f1": 0.9335
+      "train_loss": 0.1884,
+      "val_binary_accuracy": 0.942,
+      "val_macro_f1": 0.9148,
+      "val_weighted_f1": 0.942
     },
     {
       "epoch": 8,
-      "train_loss": 0.1837,
-      "val_binary_accuracy": 0.8913,
-      "val_macro_f1": 0.8603,
-      "val_weighted_f1": 0.8975
+      "train_loss": 0.1923,
+      "val_binary_accuracy": 0.9275,
+      "val_macro_f1": 0.888,
+      "val_weighted_f1": 0.9256
     }
   ],
   "confusion_matrix": {
@@ -74,39 +74,39 @@
     ],
     "matrix": [
       [
-        29,
-        1
+        27,
+        3
       ],
       [
-        14,
-        94
+        4,
+        104
       ]
     ]
   },
   "classification_report": {
     "normal": {
-      "precision": 0.6744186046511628,
-      "recall": 0.9666666666666667,
-      "f1-score": 0.7945205479452054,
+      "precision": 0.8709677419354839,
+      "recall": 0.9,
+      "f1-score": 0.8852459016393442,
       "support": 30.0
     },
     "pathological": {
-      "precision": 0.9894736842105263,
-      "recall": 0.8703703703703703,
-      "f1-score": 0.9261083743842364,
+      "precision": 0.9719626168224299,
+      "recall": 0.9629629629629629,
+      "f1-score": 0.9674418604651163,
       "support": 108.0
     },
-    "accuracy": 0.8913043478260869,
+    "accuracy": 0.9492753623188406,
     "macro avg": {
-      "precision": 0.8319461444308445,
-      "recall": 0.9185185185185185,
-      "f1-score": 0.8603144611647209,
+      "precision": 0.9214651793789569,
+      "recall": 0.9314814814814815,
+      "f1-score": 0.9263438810522302,
       "support": 138.0
     },
     "weighted avg": {
-      "precision": 0.9209834495237083,
-      "recall": 0.8913043478260869,
-      "f1-score": 0.8975023251583601,
+      "precision": 0.9500072092383112,
+      "recall": 0.9492753623188406,
+      "f1-score": 0.9495731737638614,
       "support": 138.0
     }
   }

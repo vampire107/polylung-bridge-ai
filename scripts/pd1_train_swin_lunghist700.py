@@ -1,5 +1,6 @@
 import argparse
 import json
+import copy
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -160,6 +161,8 @@ def main() -> None:
     criterion = nn.CrossEntropyLoss(weight=class_weights)
 
     history = []
+    best_macro_f1 = -1.0
+    best_state = None
     for epoch in range(1, args.epochs + 1):
         train_loss = train_one_epoch(model, train_loader, optimizer, criterion, class_names, device)
         eval_metrics = evaluate(model, val_loader, class_names, device)
@@ -172,6 +175,12 @@ def main() -> None:
                 "val_weighted_f1": eval_metrics["weighted_f1"],
             }
         )
+        if eval_metrics["macro_f1"] > best_macro_f1:
+            best_macro_f1 = eval_metrics["macro_f1"]
+            best_state = copy.deepcopy(model.state_dict())
+
+    if best_state is not None:
+        model.load_state_dict(best_state)
 
     final = evaluate(model, val_loader, class_names, device)
     baseline_delta = round(final["binary_accuracy"] - args.published_baseline, 4)
