@@ -9,3 +9,4 @@ data/raw/
 data/lunghist700_binary/
 evidence/public/pd1/*.pt
 pd1_training.log
+pd1_training_*.log
